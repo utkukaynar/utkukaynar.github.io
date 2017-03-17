@@ -1,0 +1,123 @@
+---
+layout: post
+title: Polymorphic has_many through Associations in Ruby on Rails
+date: 2016-04-21 01:32:27.000000000 +03:00
+type: post
+published: true
+status: publish
+categories:
+- yazilim
+- software
+tags:
+- polymorphy
+- ruby
+- ruby on rails
+meta:
+  _publicize_done_external: a:2:{s:8:"facebook";a:1:{i:3354413;s:38:"https://facebook.com/10153660383383247";}s:7:"twitter";a:1:{i:4135981;s:56:"https://twitter.com/utkukaynar/status/722915919685558272";}}
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _thumbnail_id: '2423'
+  _wpas_skip_7975885: '1'
+  _publicize_job_id: '21992852675'
+  _publicize_done_7978136: '1'
+  _wpas_done_3354413: '1'
+  _publicize_done_7978138: '1'
+  _wpas_done_4135981: '1'
+  publicize_twitter_user: utkukaynar
+  _wpcom_is_markdown: '1'
+author:
+  login: utkukaynar
+  email: utkukaynar@gmail.com
+  display_name: utkukaynar
+  first_name: Utku
+  last_name: Kaynar
+excerpt: 'When you have different models sharing the same join table in Ruby on Rails,
+  you can create a polymorphic has_many through relationship without a hassle.
+
+'
+---
+<p id="fbc3" class="graf--p graf-after--h3">When you have different models sharing the same join table in Ruby on Rails, you can create a polymorphic has_many through relationship without a hassle.<!--more--></p>
+<p id="3fe0" class="graf--p graf-after--p"><strong class="markup--strong markup--p-strong">The Problem</strong></p>
+<p id="83d4" class="graf--p graf-after--p">Let’s suppose that you have Task, Project and Group models and all have them have multiple members, i.e. Users. One solution is to define a seperate membership model for all models :</p>
+{% highlight ruby %}
+class User
+  has_many :group_memberships
+  has_many :groups, through: :group_memberships
+  has_many :project_memberships
+  has_many :projects, through: :project_memberships
+  # etc...
+end
+
+class Project
+  has_many :project_memberships
+  has_many :users, through: :project_memberships
+end
+
+class Group
+  has_many :group_memberships
+  has_many :users, through: :group_memberships
+end
+{% endhighlight %}
+<p id="8bdb" class="graf--p graf-after--figure">Yet in this solution, you’re clearly violating DRY principle, repeating common code in different models.</p>
+<p id="ae32" class="graf--p graf-after--p"><strong class="markup--strong markup--p-strong">The Solution</strong></p>
+<p id="d8dc" class="graf--p graf-after--p">A better solution might be having a polymorphic membership model for all models which have a membership :</p>
+{% highlight ruby %}
+class Membership < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :memberable, polymorphic: true
+end
+
+class Project < ActiveRecord::Base
+  has_many :memberships, as: :memberable, dependent: :destroy
+  has_many :users, through: :memberships
+end
+
+class Group < ActiveRecord::Base
+  has_many :memberships, as: :memberable, dependent: :destroy
+  has_many :users, through: :memberships
+end
+
+class User < ActiveRecord::Base
+  has_many :memberships
+  has_many :groups, through: :memberships, source: :memberable, source_type: 'Group'
+  has_many :projects, through: :memberships, source: :memberable, source_type: 'Project'
+end
+{% endhighlight %}
+<p id="789b" class="graf--p graf-after--figure">The reason we’re using <em class="markup--em markup--p-em">source</em> and <em class="markup--em markup--p-em">source_type</em> on <em class="markup--em markup--p-em">User</em> model for polymorphic <em class="markup--em markup--p-em">has_many through</em> is Rails doesn’t know which association to look for on the join model without knowing the type of source.</p>
+<p id="763c" class="graf--p graf-after--p">Yet we can further DRY our code by writing a concern instead of repeating same code on models :</p>
+{% highlight ruby %}
+class Membership < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :memberable, polymorphic: true
+end
+
+module Memberable
+  extend ActiveSupport::Concern
+  included do
+    has_many :memberships, as: :memberable, dependent: :destroy
+    has_many :users, through: :memberships
+    after_create :create_membership
+  end
+
+  def create_membership
+    Membership.create(memberable_type: self.class.name, memberable_id: self.id, user_id: self.creator_id)
+  end
+end
+
+class Project < ActiveRecord::Base
+  include Memberable
+end
+
+class Group < ActiveRecord::Base
+  include Memberable
+end
+
+class User < ActiveRecord::Base
+  has_many :memberships
+  has_many :groups, through: :memberships, source: :memberable, source_type: 'Group'
+  has_many :projects, through: :memberships, source: :memberable, source_type: 'Project'
+end
+             {% endhighlight %}
+<p id="60ef" class="graf--p graf-after--figure">Note that since Membership is not created automatically on new Group or Project creation, we’re using an `after_create` callback for the person who creates a group or project, thus making them members.</p>
+<p id="754c" class="graf--p graf-after--p">This way, you can call `@user.first.groups` or `user.first.projects` conveniently from the same membership model, without repeating yourself.</p>
+<p id="cefc" class="graf--p graf-after--p graf--last">Happy coding.</p>

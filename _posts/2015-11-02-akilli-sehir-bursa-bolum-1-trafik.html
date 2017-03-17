@@ -1,0 +1,61 @@
+---
+layout: post
+title: 'Akıllı Şehir Bursa, Bölüm 1 : Trafik'
+date: 2015-11-02 17:21:06.000000000 +03:00
+type: post
+published: true
+status: publish
+categories:
+- yazilim
+tags:
+- yazılım
+meta:
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _wpas_skip_3354413: '1'
+  _wpas_skip_7975885: '1'
+  _wpas_skip_4135981: '1'
+  _thumbnail_id: '2400'
+  geo_latitude: '40.22242484255871'
+  geo_longitude: '28.858366779394032'
+  geo_address: Özlüce, 16120 Nilüfer/Bursa, Türkiye
+  geo_public: '1'
+  _publicize_job_id: '16460120443'
+author:
+  login: utkukaynar
+  email: utkukaynar@gmail.com
+  display_name: utkukaynar
+  first_name: Utku
+  last_name: Kaynar
+excerpt: Kentlerde yaşayan herkes için trafik bir sorun. Istanbul'dakiler için durum
+  zaten başka bir seviyeye çıkmış durumda.
+---
+<p>Kentlerde yaşayan herkes için trafik bir sorun. Istanbul'dakiler için durum zaten başka bir seviyeye çıkmış durumda.</p>
+<p>Bursa'da yaşayan bizler için, özellikle işe gidip gelirken toplu taşımayı değil aracınızı kullanıyorsanız bu sorunu her gün giderek daha fazla hissediyorsunuz. Bu köşede şimdiye kadar hep teknoloji ağırlıklı yazılar okudunuz ve bu seri de farklı olmayacak. Bugünkü yazıda teknolojinin trafik sorununu nasıl kolaylaştırabileceğine dair somut örnekler vereceğim.</p>
+<p>Öncelikle, Türkiye'de devletin çeşitli kurumlarında kabul görmüş ve araştırmalara konu olmuş açık devlet / açık veri protokolünden bahsetmek istiyorum. Open Knowledge Foundation tarafından dünya çapında bir politika olarak tanıtılan Açık Veri, basitçe kamu hizmetlerinin ilerletilmesi, şeffaflaşması ve yurttaşlara daha homojen biçimde oluşturulması için geliştirilebilecek teknoloji projelerinde kullanılmak üzere, kamu kurumlarının kendi alanlarıyla ilgili verileri yazılım geliştiricilerin ve araştırmacıların hizmetine sunmasını öngörüyor.</p>
+<p>Open Knowledge Foundation : https://okfn.org<br />
+Türkçe Tanımlar ve Kavramlar : http://opendefinition.org/od/1.1/tr/<br />
+Konuyla ilgili örnekler de içeren Tübitak Araştırması : http://bit.ly/1l3ovuW<br />
+Barcelona Kentinin Açık Veri Portalı : http://opendata.bcn.cat/opendata/en</p>
+<p>Örnekleri incelediğinizde göreceksiniz ki temel konu bir kamu alanında, söz gelimi bir kentte kullanılan kamusal hizmetlerle ilgili verilerin ham veri olarak dışarı açılması. Yani devlet sırlarından söz etmiyoruz. Bunu sorunlu alanlara uygularsanız, bu örneğin şehrin toplu taşımacılık hizmetleriyle ilgili verilerin bir servis (API) halinde kullanıma sunulması anlamına geliyor. Somutlarsak, herhangi birisi yazılım üzerinden bir sorgulama yaparak Bursa'da hangi otobüsün kendisine yakın hangi duraktan saat kaçta geçeceğini öğrenebilir. Aynı şekilde bir yazılım kişilere kentte herhangi iki nokta arasında toplu ulaşım ile rota planlaması da yapabilir.</p>
+<p>Trafik sorununa çözüm senaryomuzun ikinci ayağı, ısı haritası denen grafik gösterim şekli. Bir örneğini <a href="https://developers.google.com/maps/documentation/javascript/examples/layer-heatmap" target="_blank">bu adresten</a> görebilirsiniz. <a href="https://www.waze.com/tr/" target="_blank">İsrailli girişim Waze</a>, Türkiye'de de açık olan uygulamalarında yoğun trafikte yolunuzu bulmanız için gerekli navigasyon talimatlarını düzenlerken, trafik verilerini hiç alışık olmadığımız bir kaynaktan alıyor : kullanıcılarının cep telefonlarından. Uygulamayı kullanan her kullanıcı aynı zamanda bir veri kaynağı, an itibariyle bulunduğu konumu ve hızını Waze'e iletiyor. Böylece gerçek zamanlı bir trafik denetleme sistemine de sahip oluyorsunuz. Bir alanda ne kadar fazla insan birikimi varsa, o alan o kadar kırmızı (ısınmış) görünüyor. Şimdiki sistemde bu bilgileri kamu kuruluşlarından alıyoruz, oysa elimizde çok daha iyi bir alternatif var. Isı haritasının bir örneği yukarıda görülebilir.</p>
+<p>Senaryonun üçüncü ayağı, deep learning (derin öğrenme) ve öneri motorları. Bir çeşit bulanık mantık ile çalışan ve artık tüm dünyada yazılım geliştiricilerin kullanabileceği web servisler ile teknoloji devleri Amazon, Microsoft veya Google tarafından sunulan yazılım algoritmalarından söz ediyoruz.</p>
+<p>Son olarak, teknolojinin olmazsa olmaz dördüncü ayağına geliyoruz. Kullanıcılar, yani topluluk. Trafik sorununa çözüm olabilecek uygulamayı kullanan insanlar iki şekilde rol oynayabilir : cep telefonlarının Waze örneğinde olduğu gibi merkeze bilgi aktarması yoluyla ve hangi kullanıcıların işlerine hangi noktalar arasında seyahat ettiğini paylaşması ile.</p>
+<p>Bursa'da arabayla işe gidiyorsanız farketmişsinizdir : çoğu araçta 1 veya 2 kişi var. Bu araçlar aşağı yukarı benzer noktalar arasında seyahat ediyor. Bursaray kullanıyorsanız, Bursaray'ın özellikle belirli saatler veya belirli duraklar arasında aşırı kalabalık olduğu size aşikar olmalı. Aynı şekilde, bazı şehir içi otobüs hatlarının çok az yolcu ile seyahat ettiğini de görmüş olmalısınız.</p>
+<p>Yanlış anlamayın. Burulaş'ın böylesi bir hizmeti var. Bursa Ulaşım ve Burulaş Trafik adlı iki mobil uygulama.  Kullanıcı yorumları çok parlak değil. Ama daha önemlisi bu veri sadece Burulaş'ın kendi uygulamaları üzerinden erişilebilir halde, yani Bursa'daki ulaşım verilerini kullanarak herhangi bir yazılım geliştiricinin yazılım geliştirebilmesi olanaklı değil.</p>
+<p>Bir başka deyişle veri "açık" değil. Oysa açık veri, birden fazla yazılım geliştiricinin insanların aktüel sorunlarına çözüm bulmasını sağlayabilir.</p>
+<p>Şimdiye kadar alt alta yazdığımız şeyleri toplarsak, nasıl bir çözümümüz olur ?</p>
+<ol>
+<li>Bursa Büyükşehir Belediyesi ve Burulaş, şehirdeki toplu ulaşım verilerini bir servis ile dışarıya açabilir.</li>
+<li>Dışarı açılan veriler ile, BBB veya Burulaş, Bursa Ulaşım başlığı altında sunulan "Burulaş Trafik" ve "Bursa Ulaşım" uygulamalarının bir sonraki seviyeye geliştirilmesi için bir yazılım yarışması (Hackathon) düzenleyebilirler. Böylesi bir yarışma pek çok şirket ve bireysel geliştiricinin ilgisini çekecektir.</li>
+<li>Geliştirilen uygulama şu özellikleri kapsayacak şekilde, kullanıcı dostu olacak şekilde yapılandırılır :
+<ol>
+<li>Herhangi bir vatandaş, cep telefonundan herhangi bir saatte kentte A noktasından B noktasına toplu ulaşım ile nasıl gideceğini   sorgulayabilir.</li>
+<li>yazilim, gerçek zamanlı olarak kentteki trafik durumunu, yoğunluk içeren bölgeleri veya hafif raylı sistemin yoğunluk saatlerini gözlemleyerek sorgulamayı yapan kişiye alternatifli öneriler getirir. Örneğin saat akşamüstü 6 ise size Acemler kavşağını kullanarak 20dk'da, Dikkaldırım üzerinden giden bir otobüs hattını kullanarak 12dk'da gidebileceğiniz bilgisini anlık trafik verilerini de göz önüne alarak verebilir.</li>
+<li>Aynı yazılımdan araba kullanan insanlar da gerçek zamanlı trafik yoğunluğunu bölgesel olarak öğrenebilir.</li>
+<li>yazilim, yapılan her sorgudan ve iletilen her veri parçacığından "öğrenir" ve önerilerini geliştirir. Daha çok hangi hatların tercih edildiğini, kentin uzun vadeli ulaşım ve yol altyapısı planlamasının nasıl yapılabileceği ile ilgili olarak yetkililere veriye dayalı öngörüler sunar.</li>
+<li>"Topluluk" bağlamı ile, birbirine çok yakın noktalardan her sabah ve akşam iş yerlerine seyahat eden araç sahipleri, ekonomik getiri yaratacak şekilde araçlarını paylaşmaya yönlendirilebilir. Bkz <a href="https://www.blablacar.com.tr" target="_blank">Bla Bla Car</a> girişimi.</li>
+</ol>
+</li>
+</ol>
+<p>Kapalı bilgiler, kapalı ekonomiler gibi geride kalıyor. Bursa'mızı bir 21 YY kenti yapacak uygulamalara giden yol, bu konuyla ilgili altyapıları açmaktan geçiyor. Bu konulardan hasbelkader haberdar bizlere de elimizden geleni herhangi bir karşılık beklemeden yapmak düşüyor.</p>
