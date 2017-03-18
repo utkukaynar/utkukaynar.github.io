@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Writings of Utku Kaynar on Software, Art, Photography and Life in general.
   Articles in English and Turkish
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.code2vps.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://utkukaynar.com.tr" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: utkukaynar
 github_username:  utkukaynar
 
