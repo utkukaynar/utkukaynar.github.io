@@ -28,10 +28,20 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
 google_analytics: UA-64906345-2
+author:
+  twitter: utkukaynar
+social:
+  name: Utku Kaynar
+  links:
+    - https://twitter.com/utkukaynar
+    - https://linkedin.com/in/utkukaynar
+    - https://facebook.com/utku.kaynar
+    - https://github.com/utkukaynar
 
 defaults:
   -
@@ -41,3 +51,4 @@ defaults:
     values:
       layout: "post"
       _author: "Utku Kaynar"
+      image: 'assets/utku.jpg'
