@@ -3,6 +3,7 @@ title: Anayasa Referandumundan Ne Anladım?
 layout: post
 description: Türkiye 16 Nisan'da bir anayasa referandumuna gidecek. Bundan ne anladığımı yazdım.
 author: utkukaynar
+image: /assets/referandum.jpg
 categories:
   - yalniz_ve_guzel_ulke
 ---
