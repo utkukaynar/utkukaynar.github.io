@@ -13,6 +13,8 @@ url: "http://utkukaynar.com.tr" # the base hostname & protocol for your site, e.
 twitter_username: utkukaynar
 github_username:  utkukaynar
 show_excerpts: true
+disqus:
+  shortname: utkukaynar
 
 # Build settings
 markdown: kramdown
@@ -32,9 +34,6 @@ social:
     - https://facebook.com/utku.kaynar
     - https://github.com/utkukaynar
 
-disqus:
-  shortname: utkukaynar
-
 defaults:
   -
     scope:
@@ -44,4 +43,3 @@ defaults:
       layout: "post"
       _author: "Utku Kaynar"
       image: 'assets/utku.jpg'
-      comments: true
