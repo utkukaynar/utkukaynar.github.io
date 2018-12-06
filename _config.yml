@@ -43,3 +43,4 @@ defaults:
       layout: "post"
       _author: "Utku Kaynar"
       image: 'assets/utku.jpg'
+      comments: true
