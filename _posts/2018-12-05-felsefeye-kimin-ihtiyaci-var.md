@@ -9,7 +9,7 @@ excerpt: >
 
 _West Point Askeri Akademisi Mezuniyet Konuşması — 6 Mart 1974_
 
-Ayn Rand [Kaynak](http://fare.tunes.org/liberty/library/pwni.html)
+Ayn Rand [Kaynak](https://fare.tunes.org/liberty/library/pwni.html)
 
 _Çeviren: Utku Kaynar_
 

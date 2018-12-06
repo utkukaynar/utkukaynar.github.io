@@ -24,7 +24,7 @@ gem 'rack-cors'
 {% endhighlight %}
 
 If you're using Rails with _api option_, you should configure your application for
-Cross Origin Requests, a.k.a [Cors](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing). The [rack-cors](https://github.com/cyu/rack-cors) gem that we're using enable us share the resources with requests coming from other origins.
+Cross Origin Requests, a.k.a [Cors](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing). The [rack-cors](https://github.com/cyu/rack-cors) gem that we're using enable us share the resources with requests coming from other origins.
 
 Once you `bundle install` the gems you can now modify your
 `application.rb` :

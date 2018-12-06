@@ -5,7 +5,7 @@ date: 2011-08-12 14:41:54.000000000 +03:00
 type: post
 excerpt: Hersey 2009 yazında başladı. Biz Bufsad'lilar, BTSO ile geliştiremedigimiz bir projenin sonunda elimizde bir festival taslağı ile kalakaldık. 2010 yılının Temmuzunda, Bursa ve fotograf icin katkıları unutulmayacak Dr. Ceyhun İrgil'in tesvikiyle proje dolaptan çıktı, ete kemiğe büründü. Aylar süren yapalım mı, yapsak mı toplantıları yerini bir yürütme kuruluna bıraktı, ekibe Merih Akogul ve Jason Eskenazi katıldı, sonra Laurence Cornet geldi ve bizler kendimizi bir anda Ortadoğu ve Balkanların en kapsamlı fotograf festivalini düzenlerken bulduk.
 ---
-![Bursa Fotofest 2011](http://2.bp.blogspot.com/-jUwO-Sn2_Kk/TqRhxFc6kRI/AAAAAAAAAm0/qN01KWpa6uQ/s1600/DSC_0021.JPG)
+![Bursa Fotofest 2011](https://2.bp.blogspot.com/-jUwO-Sn2_Kk/TqRhxFc6kRI/AAAAAAAAAm0/qN01KWpa6uQ/s1600/DSC_0021.JPG)
 
 Hersey 2009 yazında başladı. Biz Bufsad'lilar, BTSO ile geliştiremedigimiz bir projenin sonunda elimizde bir festival taslağı ile kalakaldık.
 
