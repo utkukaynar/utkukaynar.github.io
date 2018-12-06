@@ -2,6 +2,8 @@
 layout: post
 title: Felsefeye Kimin İhtiyacı Var?
 date: 2018-12-05 16:14 -0800
+excerpt: >
+  Kendimde bir öykü yazarı olduğum için, isterseniz küçük bir hikaye ile başlayalım. Siz bir astronotsunuz, uzay geminiz arızalanıyor ve bilinmeyen bir gezegene düşüyorsunuz. Bilincinizi yeniden kazandığınızda ve kötü bir yaranızın olmadığını anladığınızda aklınıza gelen sorular herhalde şunlar olacaktır : Neredeyim? Bunu nasıl bilebilirim? Ne yapmalıyım?
 ---
 ![rand](/assets/rand.jpg)
 

@@ -7,6 +7,8 @@ description: Hep ilhamın başkalarından gelmesini bekleyen sevgili arkadaşım
 author: utkukaynar
 categories:
   - yalniz_ve_guzel_ulke
+excerpt: >
+  Hep ilhamın başkalarından gelmesini bekleyen sevgili arkadaşım, sana sesleniyorum. Değişim için başkalarının sorumluluk almasını bekleyen, gizemli bir liderin gelip sorunları çözmesini bekleyen, memnun olmadığı şeyleri değiştirmek için bilinmeyen bir geleceğin mucizevi biçimde oluşmasını bekleyen sen.. Sözüm sana.
 ---
 ![bekle](/assets/bekle.jpeg)
 

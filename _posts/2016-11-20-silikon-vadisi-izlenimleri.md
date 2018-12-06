@@ -1,5 +1,7 @@
 ---
 title: "Silikon Vadisi İzlenimleri"
+excerpt: >
+  Yaklaşık 10 gündür San Francisco’dayız. Silikon Vadisini gezdik, kuruluşlar ve bireysel olarak buraya gelmiş Türklerle görüşmeler yaptık, şirketleri ziyaret ettik ve izlenimler edindik, edindim.
 ---
 ![Silikon Vadisi -- Alinti]({{site.url}}/assets/silikon.jpg)
 

@@ -3,7 +3,11 @@ layout: post
 title: Atatürk'ü Anlamak
 date: 2018-12-05 16:11 -0800
 image: /assets/ataturk.jpg
+excerpt: >
+  Şimdi hayatta olsa, mikroçip üretir, robot yapar, binlerce gence yabancı dil ve kodlama dersleri açardı, eminim. Onu kötücül bir diktatör olarak karikatürize eden düşmanlarının da, dogmalaştırıp statik kalıplara sığdıran hayranlarının da anlamadığı bu.
 ---
+![ataturk](/assets/ataturk.jpg)
+
 Şimdi hayatta olsa, mikroçip üretir, robot yapar, binlerce gence yabancı dil ve kodlama dersleri açardı, eminim. Onu kötücül bir diktatör olarak karikatürize eden düşmanlarının da, dogmalaştırıp statik kalıplara sığdıran hayranlarının da anlamadığı bu.
 
 Bugün yaşasaydı, çağın gereği neyse onu yapardı.

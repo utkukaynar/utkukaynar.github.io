@@ -6,6 +6,8 @@ author: utkukaynar
 image: /assets/referandum.jpg
 categories:
   - yalniz_ve_guzel_ulke
+excerpt: >
+  Türkiye 16 Nisan tarihinde bir anayasa referandumuna gidecek. Aylardan beri, Türkiye'de yaşayan herkes deyim yerindeyse referandum ile yatıp kalkıyor. Anayasa değişikliği teklifini detaylıca okudum, kendimce çok kısa bir özet çıkardım. Kararsız seçmen için belki yol gösterici olabilir.
 ---
 ![referandum]({{site_url}}/assets/referandum.jpg)
 
